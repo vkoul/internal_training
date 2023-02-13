@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Python🐍 Data Types" href="Python%20Basics-%20Data%20Types.html" />
+    <link rel="next" title="Pandas 101 🐍" href="Pandas%20101.html" />
+    <link rel="prev" title="Python🐍 Data Types" href="Python%20Data%20Types.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,6 +90,11 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Internal Training</h1>
@@ -109,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Python%20Basics-%20Data%20Types.html">
+  <a class="reference internal" href="Python%20Data%20Types.html">
    Python🐍 Data Types
   </a>
  </li>
@@ -119,7 +125,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Pandas%20101%20-%20Clean.html">
+  <a class="reference internal" href="Pandas%20101.html">
    Pandas 101 🐍
   </a>
  </li>
@@ -174,35 +180,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Python Basics- Data Structures.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -225,7 +202,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://vkoul.github.io/internal_training/intro.html"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -242,7 +219,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPython Basics- Data Structures.html&body=Your%20issue%20content%20here."
+        <a href="https://vkoul.github.io/internal_training/intro.html/issues/new?title=Issue%20on%20page%20%2FPython Data Structures.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -270,7 +247,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Python Basics- Data Structures.ipynb"
+        <a href="_sources/Python Data Structures.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -520,10 +497,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="alert alert-block alert-success">
-<section class="tex2jax_ignore mathjax_ignore" id="python-data-structures">
+  <section class="tex2jax_ignore mathjax_ignore" id="python-data-structures">
 <h1>Python🐍 Data Structures<a class="headerlink" href="#python-data-structures" title="Permalink to this headline">#</a></h1>
-</div><p>💡  <span style='font-family:Georgia'>
+<p>💡  <span style='font-family:Georgia'>
 <font color= darkred> <em><strong>Don’t learn and then start, start and then learn - Anon</strong></em>
 </font> 💡</p>
 <h1>Table of Contents<span class="tocSkip"></span></h1>
@@ -601,14 +577,14 @@ title="Print to PDF"
 </section>
 <section id="dictionary">
 <h2>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">#</a></h2>
-<ul>
+<ul class="simple">
 <li><p>A dictionary consists of <em><strong>keys</strong></em> and <em><strong>values</strong></em>.</p></li>
 <li><p>Compared to lists, instead of the numerical indexes, dictionaries have keys.</p></li>
-<li><p>These keys are used to access values within a dictionary.</p>
-<p><img alt="dictionary.png" src="_images/dictionary.png" /></p>
-</li>
+<li><p>These keys are used to access values within a dictionary.</p></li>
 </ul>
-</div>    <p><img alt="list.png" src="_images/list.png" /></p>
+<p><img alt="dictionary.png" src="_images/dictionary.png" /></p>
+<p><strong>Indexing in a list</strong></p>
+<p><img alt="index.png" src="_images/index.png" /></p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="exercises">
@@ -866,7 +842,7 @@ Visualzise the steps <a class="reference external" href="http://www.pythontutor.
 <li><p><strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html">10 mins pandas</a></strong> - Definitely check this out to get a quick introduction to pandas</p></li>
 <li><p><strong><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html">Data Manipulation with Pandas</a></strong></p></li>
 </ul>
-</div>    </section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="optional">
 <h1>[Optional] 🤯<a class="headerlink" href="#optional" title="Permalink to this headline">#</a></h1>
 <section id="memory-block">
@@ -962,12 +938,19 @@ Visualzise the steps <a class="reference external" href="http://www.pythontutor.
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Python%20Basics-%20Data%20Types.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Python%20Data%20Types.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Python🐍 Data Types</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Pandas%20101.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Pandas 101 🐍</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
